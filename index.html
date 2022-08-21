@@ -12,6 +12,8 @@ body {
   text-align: center;
   font-family: 'DM Sans', sans-serif;
   font-family: 'Roboto Mono', monospace;
+
+
 }
 h1 {
   text-align: center;
@@ -29,28 +31,20 @@ h2 {
   right: 18%;
   color: #b2deb2;
 }
-.mandslink {
-  color:#d16d1b;
-}
-.mandslink:hover{
-  color:#d16d1b;
-  background-color:#e1e1e1;
-}
-.table {
+
+table {
   border: 3px dotted #1c2e10;
   padding: 10px;
   border-radius: 20px;
   width: 80%;
   margin-left: 10%;
   margin-top: 21pt;
-  margin-bottom: 26pt;
+  margin-bottom: 40pt;
 }
-#footer {
+footer {
   background-color: #aad3b0;
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
+  margin: 0;
   text-align: center;
 } 
 ol, ul {
@@ -64,10 +58,14 @@ tr {
   padding: 5px;
   border-collapse: collapse;
   font-size: 8pt;
+  width: 127pt;
+  height: 40px;
+  border: 1px solid rgb(6, 122, 33);
 }
 td {
   border: 1px solid rgb(6, 122, 33);
   width: 127pt;
+  height: 40px;
 }
 .change{
     font-size: large;
@@ -76,7 +74,7 @@ td {
 .hide{
     display: none;
 }
-.buttonOne {
+.button {
   background-color: #4CAF50; 
   border: none;
   color: white;
@@ -87,30 +85,9 @@ td {
   font-size: 16px;
   cursor: pointer;
 }
-.buttonTwo {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-.buttonThree {
-  background-color: #4CAF50; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
+
 button {
-  background-color: #4CAF50; 
+  background-color: #673f7b; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -120,104 +97,113 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
 #container {
   position: relative;
   margin-bottom: 40px;
 }
 #buttons {
-  margin-bottom: 143px;
-
+  margin-bottom: 60px;
 }
+.bg-red {
+  background-color: red;  
+}
+.d-none {
+  display: none;
+}
+.border-pink {
+  border-color: pink;
+}
+
 </style>
 </head>
 
 <body>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Roboto+Mono:ital,wght@0,300;0,700;1,100;1,200;1,400;1,700&display=swap" rel="stylesheet">
-  <h1>
-    FLOWERS & PLANTS
-  </h1>
-  <h2>
-    SHOP
-  </h2>
-<p>This is a list of our plants.</p>
-  <ol type = "1">
-    <li>Large Alocasia Zebrina</li>
-    <li>Large Ficus Rubber Plant</li>
-    <li>Pineapple Plant</li>
-    <li>Medium Monstera</li>
-  </ol>
-<table id= "table" class="table">
-    <tr>
-        <td></td>
-        <td><img src="alocasia.webp" alt="Italian Trulli" style="width:195px;height:240px;"></td>
-        <td><a class="mandslink" href="https://www.marksandspencer.com/large-alocasia-plant/p/flp60547330">LINK</a></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr >
-        <td></td>
-        <td><img src="ficus.jpeg" alt="Italian Trulli" style="width:195px;height:240px;"></td>
-        <td><a class="mandslink"href=https://www.marksandspencer.com/large-ficus-plant/p/flp60547328>LINK</a></td>
-        <td rowspan="2"></td>
-        <td ></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td><img src="pineapple.jpeg" alt="Italian Trulli" style="width:200px;height:250px;"></td>
-        <td><a class="mandslink"href="https://www.marksandspencer.com/pineapple-plant/p/flp60547353">LINK</a></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td><img src="monstera.jpeg" alt="Italian Trulli" style="width:200px;height:250px;"></td>
-        <td><a class="mandslink"href="https://www.marksandspencer.com/medium-monstera-in-ceramic/p/flp60547339">LINK</a></td>
-        <td></td>
-        <td class="border"></td>
-    </tr>
-</table>
-<hr>
-<div id="container">
-<p>SHIPPING METHODS</p>
-<ul>
-  <li>Step one: Your customer places an order from your online store.</li>
-  <li>Step two: Your store automatically sends the order to your dropshipping supplier.</li>
-  <li>Step three: Your dropshipping supplier prepares your customer’s order.</li>
-  <li>Step four: Your dropshipping supplier ships the order directly to your customer.</li>
-</ul>
-</div>
-<div id="buttons">
-  <input type="button" class="buttonOne" value="CHANGE HEADING" onclick="changeHead()"/>
-  <input type="button" class="buttonTwo" value="EMPTY LIST" onclick="emptyList()"/>
-  <input type="button" class="buttonThree" value="ADD INTO LIST" onclick="addNewUlLi()"/>
-  <input type="button" class="buttonThree" value="HIDE TABLE" onclick="hideTable()"/>
-</div>  
-<div id="footer">
-  <footer>
-    <p>FLOWER & PLANTS SHOP</p>
-    <p><a href="flowerandplantshop@example.com">flowerandplantshop@example.com</a></p>
-  </footer>
-</div>
-<script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Roboto+Mono:ital,wght@0,300;0,700;1,100;1,200;1,400;1,700&display=swap" rel="stylesheet">
+    <h1>
+      FLOWERS & PLANTS
+    </h1>
+    <h2>
+      SHOP
+    </h2>
+  <p>This is a list of our plants.</p>
+    <ol type = "1">
+      <li>Large Alocasia Zebrina</li>
+      <li>Large Ficus Rubber Plant</li>
+      <li>Pineapple Plant</li>
+      <li>Medium Monstera</li>
+    </ol>
+  <table id= "table" class="table">
+      <tr>
+          <td>1</td>
+          <td><img src="alocasia.webp" alt="Italian Trulli" style="width:195px;height:240px;"></td>
+          <td><a href="https://www.marksandspencer.com/large-alocasia-plant/p/flp60547330">LINK</a></td>
+          <td>2</td>
+          <td>3</td>
+      </tr>
+      <tr >
+          <td>4</td>
+          <td><img src="ficus.jpeg" alt="Italian Trulli" style="width:195px;height:240px;"></td>
+          <td><a href=https://www.marksandspencer.com/large-ficus-plant/p/flp60547328>LINK</a></td>
+          <td rowspan="2"></td>
+          <td>5</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td><img src="pineapple.jpeg" alt="Italian Trulli" style="width:200px;height:250px;"></td>
+          <td><a href="https://www.marksandspencer.com/pineapple-plant/p/flp60547353">LINK</a></td>
+          <td>7</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td><img src="monstera.jpeg" alt="Italian Trulli" style="width:200px;height:250px;"></td>
+          <td><a href="https://www.marksandspencer.com/medium-monstera-in-ceramic/p/flp60547339">LINK</a></td>
+          <td>9</td>
+          <td class="border">10</td>
+      </tr>
+  </table>
+  <hr>
+  <div id="container">
+  <p>SHIPPING METHODS</p>
+  <ul>
+    <li>Step one: Your customer places an order from your online store.</li>
+    <li>Step two: Your store automatically sends the order to your dropshipping supplier.</li>
+    <li>Step three: Your dropshipping supplier prepares your customer’s order.</li>
+    <li>Step four: Your dropshipping supplier ships the order directly to your customer.</li>
+  </ul>
+  </div>
+  <div id="buttons">
+    <input type="button" class="button" value="PRINT TEXT" onclick="printText()"/>
+    <input type="button" class="button" value="CHANGE HEADING" onclick="changeHead()"/>
+    <input type="button" class="button" value="ADD ROW" onclick="addRow()"/>
+    <input type="button" class="button" value="COLOR LINKS" onclick="colorItABit()"/>
+    <input type="button" class="button" value="EMPTY LIST" onclick="emptyList()"/>
+    <input type="button" class="button" value="ADD INTO LIST" onclick="addNewUlLi()"/>
+    <input type="button" class="button" value="HIDE PICS" onclick="hidePics()"/>
+    <input type="button" class="button" value="HIDE TABLE" onclick="hideTable()"/>
+  </div>
+
+  <script>
 
   //31) Get the element with an id of "container" from the page
   
-  let container = document.getElementById('container') 
+  let container = document.getElementById("container") 
   
   //32) Get every <td> element from the page
   
-  let collTd = document.querySelectorAll('td')
+  let collTd = document.getElementsByTagName("td")
   
   //33) Use a loop for printing the text inside of every <td> element in the page
   
-  function printText(){
-    let innerTextNode = "hello"
-    for(let i=0;i<tdElementContainer.length; i ++){
-        innerTextNode = tdElementContainer[i].innerText
-        console.log(innerTextNode)
+  /*function printText(){
+    for(let i = 0; i < collTd.length; i ++){
+        collTd[i].innerText = "text";
+        console.log()
         }
-       }
+      }
+  */
   
   //34) Write a function to change the heading of the page
   
@@ -228,29 +214,35 @@ button {
   
   //35) Write a function to add an extra row to the table
   
-  function addRo(){
-      let table = document.getElementsByTagName('table')[0]
-      let newRow = document.createElement('tr');
-      table.appendChild(newRow)
+  function addRow(){
+      let table = document.getElementsByTagName('table');
+      let tr = document.createElement('tr');
+      for (let i = 0; i < 5; i++){
+        let td = document.createElement('td');
+        td.innerText = i + 1;
+        tr.appendChild(td);
+      }
+      table.appendChild(tr);
   }
   
   //36) Write a function to add a class of "test" to each row in the table
   
-  function addClass(){
-  let myTrs = document.getElementsByTagName('tr')
-  for(let i = 0; i < myTrs.length; i++){
-      myTrs[i].setAttribute('class', 'test')
-  }
-  }
+  function addClass() {
+    let trs = document.getElementsByTagName('tr');
+    trs.forEach((tr)=>{
+      tr.classList.add("test");
+    });
+  };
   
   //37) Write a function to add a red background to every link in the page
   
   function colorItABit(){
-      let myAs = document.getElementsByTagName('a')
-      for(let i = 0; i < myAs.length; i++){
-          myAs[i].style.backgroundColor = 'red'
-      }
-  }
+      const links = document.getElementsByTagName('a')
+      links.forEach((link => {
+        link.classList.add('bg-red');
+      }))
+      };
+  
   
   //38) Console log "Page loaded" when the page is correctly loaded
   
@@ -271,17 +263,12 @@ button {
   
   function emptyList(){
       let list = document.getElementsByTagName('ul')
-       for(let i =0; i <list.length; i++){   
-      list[i].innerText = ' '
+       for(let i =0; i < list.length; i++){   
+       list[i].innerText = ' '
        }
   }
   
   // 42) Add a button to hide every image on the page
-  
-  let eraseButtonPics = document.createElement('button')
-  eraseButtonPics.innerText = 'HIDE IMAGES'
-  let parent = document.getElementsByTagName('body')[0]
-  let footer = document.getElementsByTagName('footer')[0]
   
   function hidePics(){
       let pcs = document.querySelectorAll('img')
@@ -290,20 +277,173 @@ button {
       }
   }
   
-  parent.insertBefore(eraseButtonPics, footer )
-  eraseButtonPics.addEventListener('click', hidePics)
-  
   //43) Create a button that will hide or show the table on the page when clicked
   
   function hideTable() {
-  var x = document.getElementById("table");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+    let buttonHide = document.getElementById("table");
+    if (buttonHide.style.display === "none") {
+        buttonHide.style.display = "block";
+    } else {
+        buttonHide.style.display = "none";
   }
 }
+  //41) Add an eventListener to show an alert when the cursor hovers a link, displaying its href property
+   
+  function alertUrl() {
+        const links = document.querySelectorAll("a");
+        for (let m = 0; m < links.length; m++) {
+          links[m].onmouseenter = function (e) {
+            alert(e.target.href);
+          };
+        }
+      };
+  alertUrl();
+
+  //42) Create a button that will hide every image on the page when clicked
+
+  function hideImages() {
+          const btn = document.createElement("button");
+          btn.innerText = "Hide images";
+          btn.onclick = function () {
+            const imgs = document.querySelectorAll("img");
+            imgs.forEach((img) => {
+              img.classList.add("d-none");
+            });
+          };
+          const body = document.querySelector("body");
+          body.appendChild(btn);
+        };
+  hideImages();
+        
+  //43) Create a button that will hide or show the table on the page when clicked
+
+  function toggleTable() {
+        const btn = document.createElement("button");
+        btn.innerText = "Toggle table";
+        btn.onclick = function () {
+          const table = document.querySelector("table");
+          table.classList.toggle("d-none");
+        };
+
+        const body = document.querySelector("body");
+        body.appendChild(btn);
+      };
+  toggleTable();
+        
+  //44) Write a function for calculating the sum of every number inside all the table cells (if their content is numeric)
+
+  function sumNumbers() {
+        const tds = document.querySelectorAll("td");
+        let sum = 0;
+        tds.forEach((td) => {
+          const toNumber = parseInt(td.innerText);
+          const isNotNumeric = isNaN(toNumber);
+          if (!isNotNumeric) {
+            sum += toNumber;
+          }
+        });
+        console.log(sum);
+      };
+  sumNumbers();
+        
+  //45) Delete the last letter from the heading each time the user clicks on it
+
+  function deleteLastChar() {
+        const h1 = document.querySelector("h1");
+        h1.onclick = function (e) {
+          h1.innerText = h1.innerText.substring(0, h1.innerText.length - 1);
+        };
+      };
+  deleteLastChar();
+       
+  //46) Change the background color of a <td> if the user clicks on it
+
+  function changeTdBg() {
+        const tds = document.querySelectorAll("td");
+        tds.forEach((td) => {
+          td.onclick = function (e) {
+            e.target.classList.toggle("bg-red");
+          };
+        });
+      };
+      changeTdBg();
+
+ //47) Add a delete button at the bottom of the table, when clicked it should delete a random <td>
+    
+  function deleteRandom() {
+        const btn = document.createElement("button");
+        btn.innerText = "Delete random";
+        btn.onclick = function () {
+          const tds = document.querySelectorAll("td");
+          const random = Math.floor(Math.random() * tds.length);
+          tds[random].remove();
+        };
+        const body = document.querySelector("body");
+        body.appendChild(btn);
+      };
+      deleteRandom();
+      
+  //48) Add automatically a pink border to a cell when the mouse hovers it
+
+  const addPinkBorder = function () {
+        const cells = document.querySelectorAll("td");
+        cells.forEach((td) => {
+          td.onmouseenter = function (e) {
+            e.target.classList.add("border-pink");
+          };
+          td.onmouseleave = function (e) {
+            e.target.classList.remove("border-pink");
+          };
+        });
+      };
+  addPinkBorder();
+        
+  //49) Write a function to create a table with 4 rows and 3 columns programmatically and add it to the bottom of the page
+ 
+  function createTable() {
+        const body = document.querySelector("body");
+        const table = document.createElement("table");
+        const tbody = document.createElement("tbody");
+        table.appendChild(tbody);
+        body.appendChild(table);
+        for (let i = 0; i < 5; i++) {
+          const tr = document.createElement("tr");
+          tbody.appendChild(tr);
+          for (let j = 0; j < 3; j++) {
+            if (i === 0) {
+              const th = document.createElement("th");
+              th.innerText = "Heading " + (j + 1);
+              tr.appendChild(th);
+            } else {
+              const td = document.createElement("td");
+              td.innerText = `Row ${i} Col ${j + 1}`;
+              tr.appendChild(td);
+            }
+          }
+        }
+      };
+  createTable();
+        
+  //50) Write a function to remove the last table from the page
+
+  function removeTable() {
+    const btn = document.createElement("button");
+    btn.innerText= "Remove Last Table";
+    btn.onclick = function (){
+        const table = document.querySelectorAll("table")[1];
+        table.remove();
+    }
+    const body = document.querySelector("body");
+    body.appendChild(btn);
+    };
+
+  removeTable();
 
   </script>
+    <footer>
+      <p>FLOWER & PLANTS SHOP</p>
+      <p><a href="flowerandplantshop@example.com">flowerandplantshop@example.com</a></p>
+   </footer>
+   
   </body>
   </html>
